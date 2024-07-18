@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        video, audio {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Video and Audio Example</h1>
+
+<section>
+    <h2>Video Example</h2>
+    <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+<div class="video-container">
+    <h3>HTML YouTube Videos</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o2PWOtOtaF8?si=ti4WUoLuh7nE-zey"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</body>
+</html>

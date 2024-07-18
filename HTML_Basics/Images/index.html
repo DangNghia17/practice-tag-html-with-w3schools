@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Images</title>
+    <style>
+        body {
+            background-image: url("wallpaperflare.jpg");
+        }
+    </style>
 </head>
 <body>
 
+<h1>Image Src</h1>
+<img src="img_src.jpg" alt="Background PC" style="width:400px;height:250px;">
+<hr>
+<div style="display: flex">
+    <div style="margin-right: 30px">
+        <h1>Image another server/website</h1>
+        <img src="https://tinyjpg.com/images/social/website.jpg" alt="panda image" width="400" height="200">
+    </div>
+    <div style="margin-right: 30px">
+        <h1>Image type GIF and link from another server/website</h1>
+        <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1"
+             alt="GIF Image" width="400" height="200">
+    </div>
+</div>
+<div>
+    <h1>Image Map</h1>
+    <img src="img_src.jpg" alt="Workplace" usemap="#workmap" width="300" height="150">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
+</div>
+<hr>
+<div>
+    <p style="background-image: url('img_src.jpg');width: 250px;height: 100px; color: white">This is text description in
+        image
+        background</p>
+</div>
+<hr>
+
+<div>
+<h1>Demo < Picture> tag</h1>
+    <picture>
+        <source media="(min-width: 700px)"
+                srcset="https://media.geeksforgeeks.org/wp-content/uploads/20190825000042/geeks-221.png">
+
+        <source media="(min-width: 450px)"
+                srcset="https://media.geeksforgeeks.org/wp-content/uploads/20190802021607/geeks14.png">
+
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190808102629/geeks15.png"
+             alt="GFG"
+             style="width:auto;">
+    </picture>
+</div>
 </body>
 </html>

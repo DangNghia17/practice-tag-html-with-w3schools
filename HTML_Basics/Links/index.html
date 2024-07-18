@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Link Practice</title>
+    <style>
+        button:link, button:visited ,button{
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+<h2 id="C4">Chapter 4</h2>
+
+<h1>Link target Attribute :</h1>
+<h2>
+    <a href="https://github.com/DangNghia17/practice-tag-html-with-w3schools" target="_blank">Visit My Github with Blank
+        target!</a>
+    <br>
+    <a href="https://github.com/DangNghia17/practice-tag-html-with-w3schools" target="_parent">Visit My Github with
+        Parent target!</a>
+    <br>
+    <a href="https://github.com/DangNghia17/practice-tag-html-with-w3schools" target="_self">Visit My Github with Self
+        target!</a>
+    <br>
+    <a href="https://github.com/DangNghia17/practice-tag-html-with-w3schools" target="_top">Visit My Github with Top
+        target!</a>
+</h2>
+<hr>
+<h1>HTML Links - Use an Image as a Link :</h1>
+<a href="https://github.com/DangNghia17/practice-tag-html-with-w3schools">
+    <img src="my_avatar.jpg" alt="Ava-link-to-github" style="width:150px;height:150px; border-radius: 40px;">
+</a>
+<hr>
+<h1>Link to an Email Address and Tittle link</h1>
+<a href="mailto:dnghia2002@gmail.com" title="dnghia2002@gmail.com">Send email to Dnghia2002</a>
+
+
+<button onclick="document.location='default.asp'">Button Link</button>
+<h1>Link bookmark</h1>
+<a href="#C4">Jump to Chapter 4</a>
+<a href="html_demo.html#C4">Jump to Chapter 4 another page</a>
+
 
 </body>
 </html>
